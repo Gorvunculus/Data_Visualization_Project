@@ -8,7 +8,7 @@ export default function define(runtime, observer) {
   main.variable(observer()).define(["md"], function(md){return(
 md`# Scatterplot Matrix
 
-The scatterplot matrix (SPLOM) shows pairwise correlations for multi-dimensional data; each cell is a scatterplot where *x* encodes the column’s dimension and *y* encodes the row’s dimension. This matrix shows Gorman’s data on penguins near Palmer Station in Antarctica. See also the [brushable version](/@d3/brushable-scatterplot-matrix).`
+The scatterplot matrix (SPLOM) shows pairwise correlations for multi-dimensional data; each cell is a scatterplot where *x* encodes the column’s dimension and *y* encodes the row’s dimension. See also the [brushable version](/@d3/brushable-scatterplot-matrix).`
 )});
   main.variable(observer()).define(["swatches","z"], function(swatches,z){return(
 swatches({color: z})
