@@ -2,7 +2,7 @@
 import define1 from "./a33468b95d0b15b0@698.js";
 
 export default function define(runtime, observer) {
-  const main = runtime.module();
+   const main = runtime.module();
   const fileAttachments = new Map([["penguins.csv",new URL("./penguins.csv",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
