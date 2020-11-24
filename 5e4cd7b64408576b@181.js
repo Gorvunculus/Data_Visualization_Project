@@ -3,7 +3,7 @@ import define1 from "./a33468b95d0b15b0@698.js";
 
 export default function define(runtime, observer) {
    const main = runtime.module();
-  const fileAttachments = new Map([["penguins.csv",new URL("./penguins.csv",import.meta.url)]]);
+  const fileAttachments = new Map([["abalone.csv",new URL("./abalone.csv",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
 md`# Scatterplot Matrix
@@ -105,7 +105,7 @@ d3.scaleOrdinal()
 }
 );
   main.variable(observer("data")).define("data", ["d3","FileAttachment"], async function(d3,FileAttachment){return(
-d3.csvParse(await FileAttachment("penguins.csv").text(), d3.autoType)
+d3.csvParse(await FileAttachment("abalone.csv").text(), d3.autoType)
 )});
   main.variable(observer("columns")).define("columns", ["data"], function(data){return(
 data.columns.filter(d => typeof data[0][d] === "number")
