@@ -2,8 +2,8 @@
 import define1 from "./a33468b95d0b15b0@698.js";
 
 export default function define(runtime, observer) {
-  const main = runtime.module();
-  const fileAttachments = new Map([["penguins.csv",new URL("./files/715db1223e067f00500780077febc6cebbdd90c151d3d78317c802732252052ab0e367039872ab9c77d6ef99e5f55a0724b35ddc898a1c99cb14c31a379af80a",import.meta.url)]]);
+   const main = runtime.module();
+  const fileAttachments = new Map([["penguins.csv",new URL("./penguins.csv",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
 md`# Scatterplot Matrix
