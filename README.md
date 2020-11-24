@@ -1,33 +1,11 @@
 # Scatterplot Matrix
 
-https://observablehq.com/@d3/scatterplot-matrix@181
+Fork by Willow Tschudy and Jonathan Palafox.
 
-View this notebook in your browser by running a web server in this folder. For
-example:
+Using Observable Scatterplot Matrix sketchbook by Mike Bostock.
 
-~~~sh
-python -m SimpleHTTPServer
-~~~
+https://observablehq.com/@d3/scatterplot-matrix
 
-Or, use the [Observable Runtime](https://github.com/observablehq/runtime) to
-import this module directly into your application. To npm install:
+Zoomooz Library by Janne Aukia
 
-~~~sh
-npm install @observablehq/runtime@4
-npm install https://api.observablehq.com/@d3/scatterplot-matrix.tgz?v=3
-~~~
-
-Then, import your notebook and the runtime as:
-
-~~~js
-import {Runtime, Inspector} from "@observablehq/runtime";
-import define from "@d3/scatterplot-matrix";
-~~~
-
-To log the value of the cell named “foo”:
-
-~~~js
-const runtime = new Runtime();
-const main = runtime.module(define);
-main.value("foo").then(value => console.log(value));
-~~~
+https://jaukia.github.io/zoomooz/
